@@ -1,0 +1,89 @@
+<ng-container>
+
+  <app-header-backend></app-header-backend>
+  <mat-sidenav-container class="example-container">
+
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav">
+      <app-backend-sidenav></app-backend-sidenav>
+    </mat-sidenav>
+    <!-- ==============MIDDLE-CONTENT-SECTION============ -->
+
+
+    <mat-sidenav-content>
+
+      <div class="row">
+        <div class="col s12">
+          <p>
+            <button mat-icon-button fxHide="false" (click)="sidenav.toggle()">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </p>
+
+        </div>
+      </div>
+      <!-- ==================== FOUT-SECTION ===================== -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col s12">
+            <div class="back">
+
+            </div>
+
+            <!-- ==================== THREE-SECTION ===================== -->
+            <section class="three-section">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col xl12 m12 l12 s12">
+
+                    <mat-toolbar color="primary">
+                      <span>View Panel</span>
+                    </mat-toolbar>
+
+                    <mat-card>
+                      <button routerLink="/table" mat-raised-button color="primary">
+                        <mat-icon>keyboard_backspace</mat-icon> Back
+                      </button>
+                      <p></p>
+                      <!-- add section -->
+                      <div class="row">
+                        <form ng-submit="formSubmit()" class="form">
+                          <div class="col m5 s12 l5">
+                            <p>Hydrogen</p>
+                            <hr>
+                          </div>
+                          <div class="col m5 s12 l5">
+                              <p>test@dot.com</p>
+                              <hr>
+
+                          </div>
+                          <div class="col m2 s12 l2">
+                            <button routerLink="/edit-view" mat-raised-button color="primary" type="button">Edit</button>
+                            <button routerLink="/table" mat-raised-button color="primary" type="button">Cancel</button>
+
+                          </div>
+                        </form>
+                      </div>
+
+                      <!-- add section -->
+                    </mat-card>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- ==================== END THREE-SECTION ===================== -->
+
+          </div>
+        </div>
+      </div>
+      <!-- ====================END FOUT-SECTION ===================== -->
+
+
+
+    </mat-sidenav-content>
+    <!-- ==============END-MIDDLE-CONTENT-SECTION============ -->
+
+  </mat-sidenav-container>
+
+  <mat-toolbar class="example-footer">Footer</mat-toolbar>
+
+</ng-container>

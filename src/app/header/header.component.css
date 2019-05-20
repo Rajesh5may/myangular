@@ -1,0 +1,74 @@
+body {
+  font-size: 16px;
+}
+
+nav .brand-logo {
+  position: inherit;
+  vertical-align: top;
+  padding: 0px 10px 0px 10px;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+}
+
+.mat-toolbar.mat-primary .mat-toolbar-single-row {
+  display: block;
+  padding: 14px 0px;
+}
+
+.mat-toolbar.mat-primary .mat-toolbar-single-row button.mat-button {
+  display: inline-block;
+}
+
+.mat-sidenav-container {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.blank-grow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.mat-drawer-container[fullscreen] {
+  position: inherit;
+}
+
+.mat-list-base a {
+  display: block;
+  padding: 10px 6px;
+}
+
+.mat-list-base a:nth-child(odd) {
+  background: #f2f2f2;
+}
+
+.mat-drawer-container[fullscreen][_ngcontent-c1] .mat-drawer:not(.mat-drawer-side) {
+  width: 70%;
+}
+
+mat-toolbar .row {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  nav .button-collapse {
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+  }
+  .mat-toolbar-single-row {
+    height: auto;
+    white-space: normal;
+    font-size: 16px;
+    line-height: normal;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=header.component.css.map */

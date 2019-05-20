@@ -1,0 +1,32 @@
+.header {
+  color: #ee6e73;
+  font-weight: 300;
+}
+mat-grid-tile{
+
+  background: lightblue;
+
+}
+.example-header-image {
+  background: url(../../assets/img/sample-1.jpg);
+  background-size: cover;
+}
+button{
+  margin:0px 3px;
+}
+@media (max-width: 767px) {
+  .mat-toolbar.mat-primary span {
+    font-size: 15px;
+  }
+  .mat-toolbar-single-row{
+    height: auto;
+    white-space: normal;
+    font-size: 16px;
+    line-height: normal;
+    padding:10px;
+  }
+  button{
+    margin: 3px;
+  }
+}
+

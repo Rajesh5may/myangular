@@ -1,0 +1,28 @@
+$white-color:#ffffff;
+
+mat-carousel{
+  .carousel-caption {
+    position: absolute;
+    bottom:-30px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: $white-color;
+    background: rgba(0,0,0,0.6);
+    line-height: normal;
+    padding: 13px 0px;
+    h4{
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

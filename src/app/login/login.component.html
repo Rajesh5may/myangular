@@ -1,0 +1,55 @@
+<div class="container login-section" ng-app="myApp">
+  <div class="row">
+
+    <div class="">
+      <div class="login-bg">
+          <div class="back">
+              <a href="/" title="Back To Home"><mat-icon>keyboard_backspace</mat-icon></a>
+            </div>
+        <div class="row">
+          <mat-tab-group>
+            <mat-tab label="login">
+              <br>
+              <img _ngcontent-c4="" alt="User Icon" id="icon" src="assets/img/single_user.png">
+              <form ng-submit="formSubmit()" class="form">
+                <div class="col m12">
+                  <div class="example-container">
+                    <mat-form-field>
+                      <input matInput placeholder="Username" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                      <input matInput placeholder="Password" required>
+                    </mat-form-field>
+                    <button mat-raised-button color="primary" type="submit">Login</button>
+                  </div>
+                </div>
+              </form>
+
+            </mat-tab>
+            <mat-tab label="Signup">
+              <br>
+              <img _ngcontent-c4="" alt="User Icon" id="icon" src="assets/img/users.png">
+
+              <form ng-submit="formSubmit()" class="form">
+                <div class="example-container">
+                  <mat-form-field>
+                    <input matInput placeholder="fullname" required>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input matInput placeholder="Email" required>
+                  </mat-form-field>
+                  <mat-form-field>
+                    <input matInput placeholder="Password" required>
+                  </mat-form-field>
+                  <button mat-raised-button color="primary" type="submit">Signup</button>
+                </div>
+              </form>
+
+            </mat-tab>
+
+          </mat-tab-group>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

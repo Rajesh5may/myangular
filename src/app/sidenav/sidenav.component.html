@@ -1,0 +1,44 @@
+<mat-sidenav #sidenav mode="side" opened class="example-sidenav">
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                  Dashboard
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <!-- add section -->
+            <a mat-list-item  routerLink="/dashboard"  routerLinkActive="mat-accent">Home</a>
+            <!-- add section End -->
+          </mat-expansion-panel>
+      <!-- tab-1 -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              CheckBox Section
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <!-- add section -->
+          -----
+          <!-- add section End -->
+        </mat-expansion-panel>
+         <!-- End tab-1 -->
+
+          <!-- tab-2 -->
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Table Section
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <!-- add section -->
+            <a mat-list-item  routerLink="/table"  routerLinkActive="mat-accent">
+              <!-- <mat-icon mat-list-icon>home</mat-icon> -->
+              <span mat-line>dummy-crud</span>
+            </a>
+            <!-- add section End -->
+          </mat-expansion-panel>
+           <!-- End tab-2 -->
+      </mat-accordion>
+</mat-sidenav>
+
+

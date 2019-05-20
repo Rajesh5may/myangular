@@ -1,0 +1,48 @@
+<app-header></app-header>
+<div class="container">
+<br>
+      <mat-toolbar>
+          <span>1) Post Component (Two way binding):-</span>
+        </mat-toolbar>
+
+<mat-divider></mat-divider>
+  <br>
+  <div class="row">
+    <div class="col s12 m6">
+      <mat-toolbar color="primary">
+        <span>The Post Create Component</span>
+        <button mat-icon-button [mat-menu-trigger-for]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-toolbar>
+      <mat-menu x-position="before" #menu="matMenu">
+        <button mat-menu-item>Option 1</button>
+        <button mat-menu-item>Option 2</button>
+      </mat-menu>
+      <mat-card>
+        <mat-form-field>
+          <textarea matInput name="" id="" rows="" [(ngModel)]="enteredValue"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="onAddPost()">Save Post</button>
+
+      </mat-card>
+
+    </div>
+    <div class="col s12 m6">
+
+      <mat-toolbar color="primary">
+        <span>The Post Component</span>
+      </mat-toolbar>
+      <mat-card>
+        <p>
+          {{ newPost }}
+        </p>
+
+      </mat-card>
+    </div>
+  </div>
+
+
+
+</div>
+<app-footer></app-footer>

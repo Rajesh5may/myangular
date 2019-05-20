@@ -1,0 +1,12 @@
+/*
+
+@media (max-width: 767px) {
+  app-footer button.mat-button{
+    min-width: inherit;
+    }
+    app-footer mat-toolbar.mat-toolbar.mat-primary.mat-toolbar-single-row {
+      height: auto !important;
+      display: block !important;
+  }
+
+} */

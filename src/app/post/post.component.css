@@ -1,0 +1,22 @@
+mat-card {
+  width: 100%;
+  margin: auto;
+}
+
+mat-card mat-form-field, mat-card textarea {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .mat-toolbar.mat-primary span {
+    font-size: 15px;
+  }
+  .mat-toolbar-single-row {
+    height: auto;
+    white-space: normal;
+    font-size: 16px;
+    line-height: normal;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=post.component.css.map */

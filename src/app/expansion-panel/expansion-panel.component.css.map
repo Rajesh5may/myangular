@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,aADW,CACX,mBAAmB,CAAA;EACjB,MAAM,EAAC,QAAQ;CAChB",
+    "sources": [
+        "expansion-panel.component.scss"
+    ],
+    "names": [],
+    "file": "expansion-panel.component.css"
+}

@@ -1,0 +1,52 @@
+
+ <mat-sidenav-container fullscreen class="example-header">
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+          <button mat-icon-button (click)="sidenav.close()" fxHide="false" fxHide.gt-sm>
+              <mat-icon>menu</mat-icon>
+            </button>
+        <a mat-list-item  routerLink="/post"  routerLinkActive="mat-accent">
+           <span mat-line>Post</span>
+        </a>
+
+        <a mat-list-item routerLink="dashboard" routerLinkActive="mat-accent">
+          <span mat-line>Dashboard</span>
+        </a>
+        <a mat-list-item routerLink="login" routerLinkActive="mat-accent">
+             <span mat-line>Logout</span>
+          </a>
+
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.open()" fxHide="false" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button class="left" mat-button routerLink="/" title="home">
+        <mat-icon>home</mat-icon>
+      </button>
+      <!-- <mat-sidenav-content> -->
+        <!-- <a mat-button (click)="sidenav.toggle()"><i class="material-icons">menu</i></a> -->
+        <!-- </mat-sidenav-content> -->
+      <button mat-icon-button  fxHide="false">
+          <mat-icon>menu</mat-icon>
+        </button>
+
+      <span style="flex: 1 1 0%; box-sizing: border-box;"></span>
+
+      <div class="right" fxLayout="row" fxShow="false" fxShow.gt-sm>
+
+        <a mat-button routerLink="/post"  routerLinkActive="mat-accent">
+          <span mat-line>Post</span>
+        </a>
+
+        <a mat-button routerLink="/dashboard" routerLinkActive="mat-accent">
+          <span mat-line>Dashboard</span>
+        </a>
+        <a mat-button routerLink="/login" routerLinkActive="mat-accent">
+            <span mat-line>Logout</span>
+          </a>
+      </div>
+    </mat-toolbar>
+  </mat-sidenav-container>
+
